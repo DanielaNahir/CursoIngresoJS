@@ -10,7 +10,6 @@ function mostrar()
 	//le asigno al ID el nombre introducido en la pagina 
 	document.getElementById("txtIdNombre").value = nombre;
     
-
 	alert(txtIdNombre.value);
 
 }

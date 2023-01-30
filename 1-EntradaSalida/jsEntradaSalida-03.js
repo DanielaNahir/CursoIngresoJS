@@ -5,7 +5,7 @@ function mostrar()
 {
 	let nombre = document.getElementById("txtIdNombre").value;
 
-    //nombre = txtIdNombre.value   -no es la programacion estandar pero funciona
+    //nombre = txtIdNombre.value  -no es la programacion estandar pero funciona
 
 	alert(nombre);
 
