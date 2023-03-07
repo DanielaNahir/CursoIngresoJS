@@ -1,11 +1,12 @@
 function mostrar()
 {
 	//tomo el mes
-	var mesDelAño =txtIdMes.value;
-	alert(mesDelAño);
-	
-	
+		= prompt("");
+	while()
+	{
 
-
+	}
+		= prompt("");
+		= parseInt();
 
 }//FIN DE LA FUNCIÓN

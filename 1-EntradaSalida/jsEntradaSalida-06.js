@@ -16,7 +16,7 @@ function sumar()
 	numero2 = parseFloat(numero2);
 
 	resultado = numero1 + numero2;
-
+	
 	alert("El resultado es " + resultado);
 
 }

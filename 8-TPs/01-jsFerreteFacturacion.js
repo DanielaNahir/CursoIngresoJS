@@ -5,32 +5,66 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-	let precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    let precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    let precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
-    let resultado = precio1 + precio2 + precio3;
+	let precio1;
+    let precio2;
+    let precio3;
+    let suma;
 
-    alert("La suma es igual a $" + resultado.toFixed(2));
+    precio1 = document.getElementById("txtIdPrecioUno").value;
+    precio1 = parseFloat(precio1);
+    precio2 = document.getElementById("txtIdPrecioDos").value;
+    precio2 = parseFloat(precio2);
+    precio3 = document.getElementById("txtIdPrecioTres").value;
+    precio3 = parseFloat(precio3);
+
+    suma = precio1 + precio2 + precio3;
+
+    alert("La suma es igual a $" + suma.toFixed(2));
     
 }
 function Promedio () 
 {
-	let precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    let precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    let precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
-    let resultado = (precio1 + precio2 + precio3) /3;
+	let precio1;
+    let precio2;
+    let precio3;
+    let suma;
+    let resultado;
+
+    precio1 = document.getElementById("txtIdPrecioUno").value;
+    precio1 = parseFloat(precio1);
+    precio2 = document.getElementById("txtIdPrecioDos").value;
+    precio2 = parseFloat(precio2);
+    precio3 = document.getElementById("txtIdPrecioTres").value;
+    precio3 = parseFloat(precio3);
+
+    suma = precio1 + precio2 + precio3;
+    resultado = suma /3;
 
     alert("El promedio es de $" + resultado.toFixed(2));
 
 }
 function PrecioFinal () 
 {
-	let precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    let precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    let precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
-    let iva = (precio1 + precio2 + precio3) *21 /100;
-    let resultado = precio1 + precio2 + precio3 + iva;
+	let precio1;
+    let precio2;
+    let precio3;
+    let suma;
+    let iva;
+    let resultado;
 
-    alert("El precio final es de $" + resultado.toFixed(2)); //      toFixed() = redondear el resultado a solo dos sifras detras del punto
+    precio1 = document.getElementById("txtIdPrecioUno").value;
+    precio1 = parseFloat(precio1);
+    precio2 = document.getElementById("txtIdPrecioDos").value;
+    precio2 = parseFloat(precio2);
+    precio3 = document.getElementById("txtIdPrecioTres").value;
+    precio3 = parseFloat(precio3);
+
+    suma = precio1 + precio2 + precio3;
+    //iva = suma *21 /100;
+    //resultado = suma + iva;
+    resultado = suma *1.21;
+
+    alert("El precio final es de $" + resultado.toFixed(2));
+    //.toFixed() = redondear el resultado a ciertacantidad de sifras detras del punto
 
 }
