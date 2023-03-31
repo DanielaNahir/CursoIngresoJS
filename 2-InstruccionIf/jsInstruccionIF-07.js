@@ -85,12 +85,11 @@ function mostrar()
 			acumuladorDineroTarjetaDebito = acumuladorDineroTarjetaDebito + totalGastado;
 		}
 
-		if(bandera == false || totalGastado < minimoGastado)
+		if(contadorCompradores == 0 || totalGastado < minimoGastado)
 		{
 			minimoGastado = totalGastado;
 			nombreMinimoGastado = nombreComprador;
 			cantidadminimoGastado = cantidadProductos;
-			bandera = true;
 		}
 
 		acumuladorTotalGastado = acumuladorTotalGastado + totalGastado;
